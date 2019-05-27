@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JustTools'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of JustTools.'
 
 # This description is used to generate tags and improve search results.
@@ -30,13 +30,16 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'JustTools/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'JustTools' => ['JustTools/Assets/*.png']
-  # }
+  s.subspec 'UIKit' do |sp|
+    sp.source_files = 'JustTools/Classes/UIKit/**/*'
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'Foundation' do |sp|
+    sp.source_files = 'JustTools/Classes/Foundation/*'
+  end
+
+  s.subspec 'Utils' do |sp|
+    sp.source_files = 'JustTools/Classes/Utils/*'
+  end
 end
