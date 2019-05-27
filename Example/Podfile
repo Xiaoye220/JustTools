@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JustTools_Example' do
+  pod 'JustTools', :path => '../'
+
+  target 'JustTools_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
