@@ -1,6 +1,5 @@
 //
 //  UIViewController+Navigation.swift
-//  JustTools
 //
 //  Created by YZF on 2019/5/27.
 //

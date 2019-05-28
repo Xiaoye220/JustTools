@@ -12,9 +12,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let a = "abcdef"
-        let b = a
     }
 
     override func didReceiveMemoryWarning() {

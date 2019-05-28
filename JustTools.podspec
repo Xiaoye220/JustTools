@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JustTools'
-  s.version          = '1.0.0'
+  s.version          = '5.0.0'
   s.summary          = 'A short description of JustTools.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,8 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  
+  s.default_subspecs = 'UIKit', 'Foundation', 'Utils'
+
   s.subspec 'UIKit' do |sp|
     sp.source_files = 'JustTools/Classes/UIKit/**/*'
   end
@@ -41,5 +42,11 @@ TODO: Add long description of the pod here.
 
   s.subspec 'Utils' do |sp|
     sp.source_files = 'JustTools/Classes/Utils/*'
+  end
+
+  s.subspec 'RxSwift' do |sp|
+    sp.source_files = 'JustTools/Classes/RxSwift/*'
+    sp.dependency 'RxSwift'
+    sp.dependency 'RxCocoa'
   end
 end

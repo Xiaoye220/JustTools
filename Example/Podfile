@@ -3,6 +3,10 @@ use_frameworks!
 platform :ios,'8.0'
 
 target 'JustTools_Example' do
-  pod 'JustTools', :path => '../'
+  pod 'JustTools/UIKit', :path => '../'
+  pod 'JustTools/Foundation', :path => '../'
+  pod 'JustTools/Utils', :path => '../'
+
+  pod 'JustTools/RxSwift', :path => '../'
 
 end

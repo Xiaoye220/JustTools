@@ -1,6 +1,5 @@
 //
 //  UIColor+Extension.swift
-//  EmptyDataSet-Swift
 //
 //  Created by YZF on 29/6/17.
 //  Copyright © 2017年 Xiaoye. All rights reserved.
